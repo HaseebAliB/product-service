@@ -1,2 +1,2 @@
-# product-service
-a microservice for product
+# product-services
+a microservice project for product supply chain.
