@@ -1,6 +1,6 @@
 package com.microservice.userservice.repositories;
 
-import com.microservice.userservice.model.User;
+import com.microservice.userservice.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
