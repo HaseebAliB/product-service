@@ -11,8 +11,7 @@ public class UserController {
 
     @RequestMapping("/{id}")
     public ResponseEntity<?> get(@PathVariable String id){
-        return null;
-   // return new ResponseEntity(new UserDto(id,"landed User"), HttpStatus.OK);
+       return  ResponseEntity.ok("User has id "+ id);
 }
 
 }

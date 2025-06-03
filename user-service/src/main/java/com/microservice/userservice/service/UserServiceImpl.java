@@ -14,13 +14,15 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class UserServiceImpl implements UserService {
 
+
+    private final JmsTemplate jmsTemplate;
+    private final UserRepository userRepository;
+
     public UserServiceImpl(JmsTemplate jmsTemplate, UserRepository userRepository) {
         this.jmsTemplate = jmsTemplate;
         this.userRepository = userRepository;
     }
 
-    private final JmsTemplate jmsTemplate;
-    private UserRepository userRepository;
 
 
     @Override
